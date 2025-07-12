@@ -1,5 +1,3 @@
-"use client"
-
 import type React from "react"
 
 import { useState } from "react"
@@ -46,37 +44,30 @@ export default function ContactPage() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: ["Main Office: (555) 123-4567", "Admissions: (555) 123-4568"],
+      details: ["Main Office: +(91) 9386110332"],
       color: "text-blue-600",
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["info@newstandardacademy.edu", "admissions@newstandardacademy.edu"],
+      details: ["newstandardacademy1976@gmail.com"],
       color: "text-green-600",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Address",
-      details: ["123 Education Boulevard", "Learning City, LC 12345"],
+      details: ["Prithvipur Chiraiyatand Lane No - 02"],
       color: "text-purple-600",
     },
     {
       icon: <Clock className="h-6 w-6" />,
       title: "Office Hours",
-      details: ["Monday - Friday: 8:00 AM - 4:00 PM", "Saturday: 9:00 AM - 12:00 PM"],
+      details: ["Monday - Friday: 8:00 AM - 2:00 PM", "Saturday: 8:00 AM - 12:00 PM"],
       color: "text-orange-600",
     },
   ]
 
-  const departments = [
-    { value: "general", label: "General Inquiry" },
-    { value: "admissions", label: "Admissions" },
-    { value: "academics", label: "Academics" },
-    { value: "athletics", label: "Athletics" },
-    { value: "events", label: "Events" },
-    { value: "technical", label: "Technical Support" },
-  ]
+
 
   return (
     <div className="min-h-screen py-8">
@@ -137,24 +128,10 @@ export default function ContactPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="(555) 123-4567"
+                        placeholder=""
                       />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">Subject *</Label>
-                      <Select value={formData.subject} onValueChange={(value) => handleInputChange("subject", value)}>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select a subject" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {departments.map((dept) => (
-                            <SelectItem key={dept.value} value={dept.value}>
-                              {dept.label}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
+
                   </div>
 
                   <div className="space-y-2">
@@ -225,48 +202,9 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            {/* Quick Links */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Quick Links</CardTitle>
-                <CardDescription>Need something specific? Try these helpful resources</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <a href="/admissions">Admissions Information</a>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <a href="/events">School Calendar</a>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <a href="/login">Student/Parent Portal</a>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <a href="/about">Faculty Directory</a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
-        {/* Emergency Contact */}
-        <div className="mt-12">
-          <Card className="border-red-200 bg-red-50">
-            <CardContent className="p-6">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-6 w-6 text-red-600" />
-                <div>
-                  <h3 className="font-semibold text-red-900">Emergency Contact</h3>
-                  <p className="text-red-800">
-                    For school emergencies outside of normal hours, please call: <strong>(555) 123-HELP</strong>
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </div>
   )

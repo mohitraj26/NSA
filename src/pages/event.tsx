@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, MapPin, Filter } from "lucide-react"
@@ -11,83 +10,83 @@ export default function EventsPage() {
   const events = [
     {
       id: 1,
-      title: "Spring Open House",
-      date: "2024-03-15",
-      time: "10:00 AM - 2:00 PM",
+      title: "Speech Competition",
+      date: "2025-08-15",
+      time: "6:30 AM - 11:00 AM",
       location: "Main Campus",
-      category: "admissions",
-      description: "Join us for a comprehensive tour of our facilities and meet our faculty and staff.",
+      category: "literary",
+      description: "A platform for students to showcase their public speaking skills and express ideas on diverse topics.",
       featured: true,
     },
     {
       id: 2,
-      title: "Science Fair",
-      date: "2024-03-22",
+      title: "Annual Function",
+      date: "2026-01-24",
       time: "6:00 PM - 8:00 PM",
-      location: "Gymnasium",
-      category: "academic",
-      description: "Students showcase their innovative science projects and research findings.",
+      location: "Main Campus",
+      category: "cultural",
+      description: "The school’s grand cultural celebration featuring performances, awards, and a showcase of student talent.",
       featured: false,
     },
     {
       id: 3,
       title: "Parent-Teacher Conferences",
-      date: "2024-03-25",
-      time: "3:00 PM - 7:00 PM",
-      location: "Individual Classrooms",
+      date: "2025-09-05",
+      time: "10:00 AM - 1:00 PM",
+      location: "Main Campus",
       category: "academic",
       description: "Schedule individual meetings with your child's teachers to discuss progress.",
       featured: false,
     },
     {
       id: 4,
-      title: "Spring Concert",
-      date: "2024-04-05",
-      time: "7:00 PM",
-      location: "Auditorium",
+      title: "Rangoli Competition",
+      date: "2025-10-14",
+      time: "10:00 AM",
+      location: "Main Campus",
       category: "arts",
-      description: "Our music students perform a variety of classical and contemporary pieces.",
+      description: "A creative contest where students design colorful floor art to celebrate culture and tradition.",
       featured: true,
     },
     {
       id: 5,
-      title: "Career Day",
-      date: "2024-04-12",
-      time: "9:00 AM - 3:00 PM",
-      location: "Multiple Locations",
-      category: "academic",
-      description: "Local professionals share insights about various career paths with our students.",
+      title: "Children's Day",
+      date: "2025-11-14",
+      time: "8:00 AM - 2:00 PM",
+      location: "Main Campus",
+      category: "School Celebrations",
+      description: "A joyful celebration honoring childhood with fun activities, performances, and games for students.",
       featured: false,
     },
     {
       id: 6,
-      title: "Spring Sports Championship",
-      date: "2024-04-18",
-      time: "4:00 PM - 8:00 PM",
-      location: "Athletic Fields",
-      category: "athletics",
-      description: "Cheer on our teams as they compete in the regional championship games.",
+      title: "Republic Day",
+      date: "2026-01-26",
+      time: "8:00 AM - 11:00 AM",
+      location: "Main Campus",
+      category: "National Festivals",
+      description: "A patriotic event celebrating the adoption of the Indian Constitution through flag hoisting and cultural programs.",
       featured: false,
     },
     {
       id: 7,
-      title: "Art Exhibition Opening",
-      date: "2024-04-25",
-      time: "6:00 PM - 8:00 PM",
-      location: "Art Gallery",
-      category: "arts",
-      description: "Celebrate our students' artistic achievements at our annual art exhibition.",
-      featured: true,
+      title: "Independence Day",
+      date: "2025-08-15",
+      time: "7:00 AM - 11:00 AM",
+      location: "Main Campus",
+      category: "National Festivals",
+      description: "A patriotic celebration marking India's freedom, observed with flag hoisting, speeches, and cultural performances.",
+      featured: false,
     },
     {
       id: 8,
-      title: "Board Meeting",
-      date: "2024-05-02",
-      time: "7:00 PM",
-      location: "Conference Room A",
-      category: "administrative",
-      description: "Monthly school board meeting - open to the public.",
-      featured: false,
+      title: "Sarswati Puja",
+      date: "2026-01-23",
+      time: "10:00 AM - 2:00 PM",
+      location: "Main Campus",
+      category: "cultural",
+      description: "A traditional observance where students worship the goddess of knowledge and seek blessings for academic success.",
+      featured: true,
     },
   ]
 
@@ -95,9 +94,9 @@ export default function EventsPage() {
     { value: "all", label: "All Events" },
     { value: "academic", label: "Academic" },
     { value: "arts", label: "Arts & Culture" },
-    { value: "athletics", label: "Athletics" },
-    { value: "admissions", label: "Admissions" },
-    { value: "administrative", label: "Administrative" },
+    { value: "cultural", label: "Cultural" },
+    { value: "literary", label: "Literary" },
+    { value: "National Festivals", label: "National Festivals" },
   ]
 
   const filteredEvents =
@@ -230,12 +229,6 @@ export default function EventsPage() {
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-2">
-                      <Button variant="outline" size="sm">
-                        Add to Calendar
-                      </Button>
-                      <Button size="sm">Learn More</Button>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -243,22 +236,6 @@ export default function EventsPage() {
           </div>
         </section>
 
-        {/* Calendar Integration Note */}
-        <div className="mt-12 p-6 bg-blue-50 rounded-lg">
-          <h3 className="text-lg font-semibold text-blue-900 mb-2">Stay Updated</h3>
-          <p className="text-blue-800 mb-4">
-            Never miss an important school event! Subscribe to our calendar or follow us on social media for the latest
-            updates.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Button variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-100 bg-transparent">
-              Subscribe to Calendar
-            </Button>
-            <Button variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-100 bg-transparent">
-              Email Notifications
-            </Button>
-          </div>
-        </div>
       </div>
     </div>
   )
