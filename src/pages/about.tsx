@@ -5,31 +5,17 @@ import { Users, Target, Heart, BookOpen } from "lucide-react"
 export default function AboutPage() {
   const staff = [
     {
-      name: "Dr. Sarah Johnson",
-      position: "Principal",
+      name: " Late Sri Ram Nath Roy",
+      position: "Founder",
       department: "Administration",
-      bio: "Dr. Johnson brings over 15 years of educational leadership experience to New Standard Academy.",
+      bio: "Sri Ram Nath Roy, a visionary educationist and philanthropist, is the founder of New Standard Academy, dedicated to nurturing future-ready, value-driven students.",
       image: "/placeholder.svg?height=200&width=200",
     },
     {
-      name: "Michael Chen",
-      position: "Vice Principal",
+      name: "Uday Roy",
+      position: "Director",
       department: "Administration",
-      bio: "Mr. Chen oversees curriculum development and student academic progress.",
-      image: "/placeholder.svg?height=200&width=200",
-    },
-    {
-      name: "Emily Rodriguez",
-      position: "STEM Department Head",
-      department: "STEM",
-      bio: "Ms. Rodriguez leads our innovative STEM programs and research initiatives.",
-      image: "/placeholder.svg?height=200&width=200",
-    },
-    {
-      name: "David Thompson",
-      position: "Arts Department Head",
-      department: "Arts",
-      bio: "Mr. Thompson coordinates our comprehensive arts and culture programs.",
+      bio: "Uday Roy, a visionary director, is a visionary educator and transformational leader, is committed to shaping future-ready minds through excellence in education and values-based leadership.",
       image: "/placeholder.svg?height=200&width=200",
     },
   ]
@@ -129,9 +115,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed mb-4">
-                Founded in 2010, New Standard Academy began with a vision to create an educational environment that
-                combines academic rigor with character development. Our founders recognized the need for a school that
-                would prepare students not just for tests, but for life.
+                New Standard Academy began with a vision to create an educational environment that combines academic rigor with character development. Our founder, <b>Sri Ram Nath Roy</b>, recognized the need for a school that would prepare students not just for tests, but for life.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Over the years, we have grown from a small community school to a recognized institution of excellence,
@@ -155,7 +139,7 @@ export default function AboutPage() {
             <p className="text-gray-600">Dedicated professionals committed to student success</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
             {staff.map((member, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>

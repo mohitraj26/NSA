@@ -1,7 +1,4 @@
-"use client"
-
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
 import {
   Carousel,
   CarouselContent,
@@ -10,8 +7,13 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel"
-import {Link} from "react-router-dom"
 import Autoplay from "embla-carousel-autoplay"
+
+import newspaper from "../assets/Photos/00112.jpg"
+import newsarticle from "../assets/Photos/001 Icard (1)_page-000312.jpg"
+import award from "../assets/Photos/001 Icard (1)_page-0011.jpg"
+import award2 from "../assets/Photos/001 Icard (1)_page-0010.jpg"
+import trip from "../assets/Photos/001 Icard (1)_page-0006.jpg"
 
 export function HeroCarousel() {
   const [api, setApi] = useState<CarouselApi>()
@@ -21,47 +23,40 @@ export function HeroCarousel() {
     {
       title: "Welcome to New Standard Academy",
       subtitle: "Empowering students to achieve excellence through innovative education and character development",
-      image: "/placeholder.svg?height=600&width=1200&text=Students+Learning",
+      image: "/placeholder.svg?height=600&width=1200&text=Welcome+to+New+Standard+Academy",
       gradient: "from-blue-600 to-blue-800",
       buttonColor: "bg-white text-blue-600 hover:bg-blue-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-blue-600",
       textColor: "text-blue-100",
-      primaryAction: { text: "Apply Now", to: "/admissions" },
-      secondaryAction: { text: "Learn More", to: "/about" },
     },
     {
-      title: "STEM Excellence Program",
-      subtitle:
-        "Cutting-edge science, technology, engineering, and mathematics education preparing students for tomorrow",
-      image: "/placeholder.svg?height=600&width=1200&text=Science+Laboratory",
-      gradient: "from-green-600 to-green-800",
+      image: newspaper,
       buttonColor: "bg-white text-green-600 hover:bg-green-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-green-600",
-      textColor: "text-green-100",
-      primaryAction: { text: "Explore STEM", to: "/admissions" },
-      secondaryAction: { text: "Our Programs", to: "/about" },
     },
     {
-      title: "Arts & Culture Program",
-      subtitle: "Nurturing creativity through comprehensive music, theater, and visual arts education",
-      image: "/placeholder.svg?height=600&width=1200&text=Arts+Performance",
+      image: newsarticle,
       gradient: "from-purple-600 to-purple-800",
       buttonColor: "bg-white text-purple-600 hover:bg-purple-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-purple-600",
-      textColor: "text-purple-100",
-      primaryAction: { text: "Join the Arts", to: "/admissions" },
-      secondaryAction: { text: "View Performances", to: "/events" },
     },
     {
-      title: "Athletic Excellence",
-      subtitle: "Building character, teamwork, and physical fitness through competitive sports programs",
-      image: "/placeholder.svg?height=600&width=1200&text=Sports+Athletics",
+      image: award,
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
-      textColor: "text-orange-100",
-      primaryAction: { text: "Join Our Teams", to: "/admissions" },
-      secondaryAction: { text: "Game Schedule", to: "/events" },
+    },
+    {
+      image: award2,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: trip,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
   ]
 
@@ -97,7 +92,7 @@ export function HeroCarousel() {
             <CarouselItem key={index}>
               <div className={`relative h-[400px] sm:h-[500px] lg:h-[600px] bg-gradient-to-r ${slide.gradient}`}>
                 <div
-                  className="absolute inset-0 bg-cover bg-center bg-blend-overlay bg-black/40"
+                  className="absolute inset-0 bg-center bg-contain bg-no-repeat bg-blue-700"
                   style={{
                     backgroundImage: `url('${slide.image}')`,
                   }}
@@ -113,19 +108,6 @@ export function HeroCarousel() {
                       >
                         {slide.subtitle}
                       </p>
-                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in-delay-2 px-4">
-                        <Button asChild size="lg" className={`${slide.buttonColor} w-full sm:w-auto`}>
-                          <Link to={slide.primaryAction.to}>{slide.primaryAction.text}</Link>
-                        </Button>
-                        <Button
-                          asChild
-                          size="lg"
-                          variant="outline"
-                          className={`${slide.outlineColor} bg-transparent w-full sm:w-auto`}
-                        >
-                          <Link to={slide.secondaryAction.to}>{slide.secondaryAction.text}</Link>
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </div>

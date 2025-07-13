@@ -16,6 +16,8 @@ export function Header() {
   const navigation = [
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
+    { name: "Teachers", to: "/teachers" },
+    { name: "Gallery", to: "/gallery" },
     { name: "Admissions", to: "/admissions" },
     { name: "Events", to: "/events" },
     { name: "Contact", to: "/contact" },

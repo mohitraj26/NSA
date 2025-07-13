@@ -7,6 +7,8 @@ import EventsPage from './pages/event'
 import ContactPage from './pages/contact'
 import AdmissionsPage from './pages/admission'
 import AboutPage from './pages/about'
+import GalleryPage from './pages/gallery'
+import TeachersPage from './pages/teacher'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/admissions" element={<AdmissionsPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/teachers" element={<TeachersPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         {/* Add more routes as needed */}
       </Routes>
     <Footer />

@@ -26,6 +26,19 @@ export function Footer() {
                   About Us
                 </Link>
               </li>
+                            <li>
+                <Link
+                  to="/teachers"
+                  className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base"
+                >
+                  Teachers
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">
+                  Gallery
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/admissions"

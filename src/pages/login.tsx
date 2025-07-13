@@ -1,5 +1,3 @@
-"use client"
-
 import type React from "react"
 
 import { useState } from "react"
@@ -241,26 +239,6 @@ export default function LoginPage() {
               </Card>
             </div>
           </div>
-        </div>
-
-        {/* Help Section */}
-        <div className="mt-12 text-center">
-          <Card className="max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Need Help Logging In?</h3>
-              <p className="text-gray-600 mb-6">
-                If you're having trouble accessing your portal, our support team is here to help.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline" asChild>
-                  <Link to="/contact">Contact IT Support</Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link to="/help">View Help Guide</Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>
