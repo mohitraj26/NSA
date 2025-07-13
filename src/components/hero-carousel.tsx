@@ -13,7 +13,18 @@ import newspaper from "../assets/Photos/00112.jpg"
 import newsarticle from "../assets/Photos/001 Icard (1)_page-000312.jpg"
 import award from "../assets/Photos/001 Icard (1)_page-0011.jpg"
 import award2 from "../assets/Photos/001 Icard (1)_page-0010.jpg"
-import trip from "../assets/Photos/001 Icard (1)_page-0006.jpg"
+import rajgir from "../assets/Photos/Rajgir Tour.jpg"
+import krishna from "../assets/Photos/Krishna Song.jpg"
+import sarswati from "../assets/Photos/Sarswati Vandana.jpg"
+import welcome from "../assets/Photos/Welcome Song.jpg"
+import chiefguest from "../assets/Photos/Chief Guest.jpg"
+import inaugration from "../assets/Photos/Inauguration.jpg"
+import rajkumar from "../assets/Photos/Raj Kumar Sir.jpg"
+import navdeep from "../assets/Photos/Navdeep Award.png"
+import ward from "../assets/Photos/Ward Councillor.jpg"
+import newsarticle2 from "../assets/Photos/001 Icard (1)_page-0003.jpg"
+import newsarticle3 from "../assets/Photos/001 Icard (1)_page-0004.jpg"
+import radhaSong from "../assets/Photos/001 Icard (1)_page-0007.jpg"
 
 export function HeroCarousel() {
   const [api, setApi] = useState<CarouselApi>()
@@ -41,6 +52,78 @@ export function HeroCarousel() {
       outlineColor: "border-white text-white hover:bg-white hover:text-purple-600",
     },
     {
+      image: rajgir,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: krishna,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: sarswati,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: radhaSong,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: welcome,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: inaugration,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: chiefguest,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: rajkumar,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: ward,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: newsarticle2,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: newsarticle3,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
+      image: navdeep,
+      gradient: "from-orange-600 to-orange-800",
+      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
+      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
+    },
+    {
       image: award,
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
@@ -52,12 +135,7 @@ export function HeroCarousel() {
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
-    {
-      image: trip,
-      gradient: "from-orange-600 to-orange-800",
-      buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
-      outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
-    },
+
   ]
 
   useEffect(() => {

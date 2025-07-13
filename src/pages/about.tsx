@@ -1,6 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Target, Heart, BookOpen } from "lucide-react"
+import founderimage from "../assets/Photos/Founder Image.jpg"
+import director from "../assets/Photos/Director.png"
 
 export default function AboutPage() {
   const staff = [
@@ -9,14 +11,14 @@ export default function AboutPage() {
       position: "Founder",
       department: "Administration",
       bio: "Sri Ram Nath Roy, a visionary educationist and philanthropist, is the founder of New Standard Academy, dedicated to nurturing future-ready, value-driven students.",
-      image: "/placeholder.svg?height=200&width=200",
+      image: founderimage,
     },
     {
       name: "Uday Roy",
       position: "Director",
       department: "Administration",
       bio: "Uday Roy, a visionary director, is a visionary educator and transformational leader, is committed to shaping future-ready minds through excellence in education and values-based leadership.",
-      image: "/placeholder.svg?height=200&width=200",
+      image: director,
     },
   ]
 
@@ -135,7 +137,7 @@ export default function AboutPage() {
         {/* Staff Profiles */}
         <section>
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Leadership Team</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Guiding Minds Behind New Standard Academy</h2>
             <p className="text-gray-600">Dedicated professionals committed to student success</p>
           </div>
 

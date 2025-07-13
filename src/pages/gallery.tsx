@@ -3,216 +3,170 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Camera, Calendar, MapPin, Users, BookOpen, Palette, Trophy, Building } from "lucide-react"
+import { Camera } from "lucide-react"
+
+// Image Imports
+import img1 from "../assets/Gallery/DSC03035.jpg"
+import img2 from "../assets/Gallery/DSC03094.jpg"
+import img3 from "../assets/Gallery/DSC03096.jpg"
+import img4 from "../assets/Gallery/DSC03109.jpg"
+import img5 from "../assets/Gallery/DSC03119.jpg"
+import img6 from "../assets/Gallery/DSC03121.jpg"
+import img7 from "../assets/Gallery/DSC03129.jpg"
+import img8 from "../assets/Gallery/DSC03131.jpg"
+import img9 from "../assets/Gallery/DSC03136.jpg"
+import img10 from "../assets/Gallery/DSC03163.jpg"
+import img11 from "../assets/Gallery/DSC03167.jpg"
+import img12 from "../assets/Gallery/DSC03196.jpg"
+import img13 from "../assets/Gallery/DSC03198.jpg"
+import img14 from "../assets/Gallery/DSC03201.jpg"
+import farewell from "../assets/Gallery/Farewell.jpg"
+import group1 from "../assets/Gallery/Group 1.jpg"
+import group2 from "../assets/Gallery/Group 2.jpg"
+import groupAnnual from "../assets/Gallery/Group Photo Annual Function.jpg"
+import prizeDistribution from "../assets/Gallery/Prize Distribution.jpg"
+import womenEmpowerment from "../assets/Gallery/Women Empowerment.jpg"
+import z50_1962 from "../assets/Gallery/Z50_1962.jpg"
+import z50_2116 from "../assets/Gallery/Z50_2116.jpg"
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
-  const categories = [
-    { id: "all", name: "All Photos", icon: <Camera className="h-4 w-4" /> },
-    { id: "campus", name: "Campus", icon: <Building className="h-4 w-4" /> },
-    { id: "classrooms", name: "Classrooms", icon: <BookOpen className="h-4 w-4" /> },
-    { id: "events", name: "Events", icon: <Calendar className="h-4 w-4" /> },
-    { id: "arts", name: "Arts", icon: <Palette className="h-4 w-4" /> },
-    { id: "sports", name: "Sports", icon: <Trophy className="h-4 w-4" /> },
-    { id: "students", name: "Student Life", icon: <Users className="h-4 w-4" /> },
-  ]
-
   const photos = [
-    // Campus
     {
       id: 1,
-      title: "Main Campus Building",
-      category: "campus",
-      image: "/placeholder.svg?height=400&width=600&text=Main+Campus+Building",
-      description: "Our beautiful main campus building houses administrative offices and elementary classrooms.",
-      date: "2024-01-15",
-      location: "Main Campus",
+      title: "School Event",
+      image: img1,
+      description: "Students participating in a school event.",
     },
     {
       id: 2,
-      title: "Library & Learning Center",
-      category: "campus",
-      image: "/placeholder.svg?height=400&width=600&text=Library+Learning+Center",
-      description: "State-of-the-art library with extensive digital and physical resources.",
-      date: "2024-01-10",
-      location: "Learning Center",
+      title: "Class Activity",
+      image: img2,
+      description: "Students engaged in a classroom activity.",
     },
     {
       id: 3,
-      title: "Science Laboratory",
-      category: "campus",
-      image: "/placeholder.svg?height=400&width=600&text=Science+Laboratory",
-      description: "Modern science labs equipped with the latest technology for hands-on learning.",
-      date: "2024-01-08",
-      location: "Science Wing",
+      title: "Group Learning",
+      image: img3,
+      description: "Students working together on a project.",
     },
-
-    // Classrooms
     {
       id: 4,
-      title: "Elementary Classroom",
-      category: "classrooms",
-      image: "/placeholder.svg?height=400&width=600&text=Elementary+Classroom",
-      description: "Bright and engaging elementary classroom designed for interactive learning.",
-      date: "2024-01-12",
-      location: "Elementary Wing",
+      title: "School Function",
+      image: img4,
+      description: "Annual school function celebration.",
     },
     {
       id: 5,
-      title: "High School Chemistry Lab",
-      category: "classrooms",
-      image: "/placeholder.svg?height=400&width=600&text=Chemistry+Lab",
-      description: "Advanced chemistry laboratory for high school students.",
-      date: "2024-01-14",
-      location: "Science Building",
+      title: "Student Performance",
+      image: img5,
+      description: "Students performing at a school event.",
     },
     {
       id: 6,
-      title: "Computer Lab",
-      category: "classrooms",
-      image: "/placeholder.svg?height=400&width=600&text=Computer+Lab",
-      description: "Technology center with latest computers and software for digital learning.",
-      date: "2024-01-11",
-      location: "Technology Center",
+      title: "Cultural Event",
+      image: img6,
+      description: "Cultural performance by students.",
     },
-
-    // Events
     {
       id: 7,
-      title: "Spring Open House",
-      category: "events",
-      image: "/placeholder.svg?height=400&width=600&text=Spring+Open+House",
-      description: "Families touring our campus during the annual Spring Open House event.",
-      date: "2024-03-15",
-      location: "Main Campus",
+      title: "School Gathering",
+      image: img7,
+      description: "Students gathered for an event.",
     },
     {
       id: 8,
-      title: "Science Fair 2024",
-      category: "events",
-      image: "/placeholder.svg?height=400&width=600&text=Science+Fair+2024",
-      description: "Students presenting their innovative science projects at the annual science fair.",
-      date: "2024-03-22",
-      location: "Gymnasium",
+      title: "Annual Function",
+      image: img8,
+      description: "Celebration at the annual function.",
     },
     {
       id: 9,
-      title: "Graduation Ceremony",
-      category: "events",
-      image: "/placeholder.svg?height=400&width=600&text=Graduation+Ceremony",
-      description: "Celebrating our graduating class of 2024 at the commencement ceremony.",
-      date: "2024-06-15",
-      location: "Auditorium",
+      title: "Student Interaction",
+      image: img9,
+      description: "Students interacting during an event.",
     },
-
-    // Arts
     {
       id: 10,
-      title: "Art Exhibition",
-      category: "arts",
-      image: "/placeholder.svg?height=400&width=600&text=Art+Exhibition",
-      description: "Student artwork displayed in our annual art exhibition.",
-      date: "2024-04-25",
-      location: "Art Gallery",
+      title: "School Activity",
+      image: img10,
+      description: "Students participating in an activity.",
     },
     {
       id: 11,
-      title: "Spring Concert",
-      category: "arts",
-      image: "/placeholder.svg?height=400&width=600&text=Spring+Concert",
-      description: "Our talented music students performing at the Spring Concert.",
-      date: "2024-04-05",
-      location: "Auditorium",
+      title: "Group Photo",
+      image: img11,
+      description: "Students posing for a group photo.",
     },
     {
       id: 12,
-      title: "Drama Performance",
-      category: "arts",
-      image: "/placeholder.svg?height=400&width=600&text=Drama+Performance",
-      description: "Students showcasing their acting talents in our spring drama production.",
-      date: "2024-05-10",
-      location: "Theater",
+      title: "Event Celebration",
+      image: img12,
+      description: "Celebration during a school event.",
     },
-
-    // Sports
     {
       id: 13,
-      title: "Basketball Championship",
-      category: "sports",
-      image: "/placeholder.svg?height=400&width=600&text=Basketball+Championship",
-      description: "Our basketball team competing in the regional championship game.",
-      date: "2024-04-18",
-      location: "Gymnasium",
+      title: "Student Gathering",
+      image: img13,
+      description: "Students gathered for an activity.",
     },
     {
       id: 14,
-      title: "Track and Field Day",
-      category: "sports",
-      image: "/placeholder.svg?height=400&width=600&text=Track+Field+Day",
-      description: "Students participating in our annual track and field competition.",
-      date: "2024-05-20",
-      location: "Athletic Fields",
+      title: "School Function",
+      image: img14,
+      description: "Students at a school function.",
     },
     {
       id: 15,
-      title: "Soccer Team Victory",
-      category: "sports",
-      image: "/placeholder.svg?height=400&width=600&text=Soccer+Team+Victory",
-      description: "Celebrating our soccer team's victory in the district finals.",
-      date: "2024-05-25",
-      location: "Soccer Field",
+      title: "Farewell Event",
+      image: farewell,
+      description: "Students at the farewell event.",
     },
-
-    // Student Life
     {
       id: 16,
-      title: "Lunch Time Fun",
-      category: "students",
-      image: "/placeholder.svg?height=400&width=600&text=Lunch+Time+Fun",
-      description: "Students enjoying their lunch break in our cafeteria.",
-      date: "2024-02-14",
-      location: "Cafeteria",
+      title: "Group Photo 1",
+      image: group1,
+      description: "Students posing for a group photo.",
     },
     {
       id: 17,
-      title: "Study Group Session",
-      category: "students",
-      image: "/placeholder.svg?height=400&width=600&text=Study+Group+Session",
-      description: "Students collaborating in a study group session in the library.",
-      date: "2024-03-01",
-      location: "Library",
+      title: "Group Photo 2",
+      image: group2,
+      description: "Another group photo of students.",
     },
     {
       id: 18,
-      title: "Club Activities",
-      category: "students",
-      image: "/placeholder.svg?height=400&width=600&text=Club+Activities",
-      description: "Various student clubs meeting and engaging in activities.",
-      date: "2024-03-08",
-      location: "Student Center",
+      title: "Annual Function Group",
+      image: groupAnnual,
+      description: "Group photo from annual function.",
+    },
+    {
+      id: 19,
+      title: "Prize Distribution",
+      image: prizeDistribution,
+      description: "Students receiving prizes.",
+    },
+    {
+      id: 20,
+      title: "Women Empowerment",
+      image: womenEmpowerment,
+      description: "Event celebrating women empowerment.",
+    },
+    {
+      id: 21,
+      title: "School Event",
+      image: z50_1962,
+      description: "Students at a school event.",
+    },
+    {
+      id: 22,
+      title: "Student Activity",
+      image: z50_2116,
+      description: "Students engaged in an activity.",
     },
   ]
-
-  const filterPhotos = (categoryId: string) => {
-    if (categoryId === "all") return photos
-    return photos.filter((photo) => photo.category === categoryId)
-  }
-
-  const getCategoryColor = (category: string) => {
-    const colors = {
-      campus: "bg-blue-100 text-blue-800",
-      classrooms: "bg-green-100 text-green-800",
-      events: "bg-purple-100 text-purple-800",
-      arts: "bg-pink-100 text-pink-800",
-      sports: "bg-orange-100 text-orange-800",
-      students: "bg-yellow-100 text-yellow-800",
-    }
-    return colors[category as keyof typeof colors] || "bg-gray-100 text-gray-800"
-  }
 
   return (
     <div className="min-h-screen py-8">
@@ -221,97 +175,47 @@ export default function GalleryPage() {
         <div className="text-center mb-8 sm:mb-12 px-4">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">School Gallery</h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our vibrant school community through photos of our campus, classrooms, events, and student life.
+            Explore our vibrant school community through photos of various events and activities.
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 mb-8">
-            {categories.map((category) => (
-              <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-1 text-xs sm:text-sm">
-                {category.icon}
-                <span className="hidden sm:inline">{category.name}</span>
-                <span className="sm:hidden">{category.name.split(" ")[0]}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {categories.map((category) => (
-            <TabsContent key={category.id} value={category.id}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-                {filterPhotos(category.id).map((photo) => (
-                  <Dialog key={photo.id}>
-                    <DialogTrigger asChild>
-                      <Card className="cursor-pointer hover:shadow-lg transition-shadow group">
-                        <CardContent className="p-0">
-                          <div className="relative overflow-hidden rounded-t-lg">
-                            <img
-                              src={photo.image || "/placeholder.svg"}
-                              alt={photo.title}
-                              width={400}
-                              height={300}
-                              className="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-                            />
-                            <div className="absolute top-2 right-2">
-                              <Badge className={getCategoryColor(photo.category)}>
-                                {photo.category.charAt(0).toUpperCase() + photo.category.slice(1)}
-                              </Badge>
-                            </div>
-                          </div>
-                          <div className="p-4">
-                            <h3 className="font-semibold text-gray-900 mb-2">{photo.title}</h3>
-                            <p className="text-sm text-gray-600 mb-3 line-clamp-2">{photo.description}</p>
-                            <div className="flex items-center justify-between text-xs text-gray-500">
-                              <div className="flex items-center gap-1">
-                                <Calendar className="h-3 w-3" />
-                                {new Date(photo.date).toLocaleDateString()}
-                              </div>
-                              <div className="flex items-center gap-1">
-                                <MapPin className="h-3 w-3" />
-                                {photo.location}
-                              </div>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
-                      <div className="space-y-4">
-                        <img
-                          src={photo.image || "/placeholder.svg"}
-                          alt={photo.title}
-                          width={800}
-                          height={600}
-                          className="w-full h-auto rounded-lg"
-                        />
-                        <div>
-                          <div className="flex items-center justify-between mb-2">
-                            <h2 className="text-2xl font-bold text-gray-900">{photo.title}</h2>
-                            <Badge className={getCategoryColor(photo.category)}>
-                              {photo.category.charAt(0).toUpperCase() + photo.category.slice(1)}
-                            </Badge>
-                          </div>
-                          <p className="text-gray-600 mb-4">{photo.description}</p>
-                          <div className="flex items-center gap-4 text-sm text-gray-500">
-                            <div className="flex items-center gap-1">
-                              <Calendar className="h-4 w-4" />
-                              {new Date(photo.date).toLocaleDateString()}
-                            </div>
-                            <div className="flex items-center gap-1">
-                              <MapPin className="h-4 w-4" />
-                              {photo.location}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-                ))}
-              </div>
-            </TabsContent>
+        {/* Photo Grid - Updated with larger card sizes */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {photos.map((photo) => (
+            <Dialog key={photo.id}>
+              <DialogTrigger asChild>
+                <Card className="cursor-pointer hover:shadow-lg transition-shadow group h-full">
+                  <CardContent className="p-0 h-full flex flex-col">
+                    <div className="relative overflow-hidden rounded-t-lg flex-1">
+                      <img
+                        src={photo.image}
+                        alt={photo.title}
+                        className="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-4 sm:p-6">
+                      <h3 className="font-semibold text-lg sm:text-xl text-gray-900 mb-2">{photo.title}</h3>
+                      <p className="text-sm sm:text-base text-gray-600">{photo.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                <div className="space-y-4">
+                  <img
+                    src={photo.image}
+                    alt={photo.title}
+                    className="w-full h-auto rounded-lg"
+                  />
+                  <div>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{photo.title}</h2>
+                    <p className="text-gray-600 text-base sm:text-lg">{photo.description}</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
-        </Tabs>
+        </div>
 
         {/* Photo Submission Section */}
         <div className="mt-16 p-6 sm:p-8 bg-gray-50 rounded-lg">
