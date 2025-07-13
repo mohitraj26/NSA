@@ -5,30 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Camera } from "lucide-react"
 
-// Image Imports
-// import img1 from "../assets/Gallery/DSC03035.jpg"
-// import img2 from "../assets/Gallery/DSC03094.jpg"
-// import img3 from "../assets/Gallery/DSC03096.jpg"
-// import img4 from "../assets/Gallery/DSC03109.jpg"
-// import img5 from "../assets/Gallery/DSC03119.jpg"
-// import img6 from "../assets/Gallery/DSC03121.jpg"
-// import img7 from "../assets/Gallery/DSC03129.jpg"
-// import img8 from "../assets/Gallery/DSC03131.jpg"
-// import img9 from "../assets/Gallery/DSC03136.jpg"
-// import img10 from "../assets/Gallery/DSC03163.jpg"
-// import img11 from "../assets/Gallery/DSC03167.jpg"
-// import img12 from "../assets/Gallery/DSC03196.jpg"
-// import img13 from "../assets/Gallery/DSC03198.jpg"
-// import img14 from "../assets/Gallery/DSC03201.jpg"
-// import farewell from "../assets/Gallery/Farewell.jpg"
-// import group1 from "../assets/Gallery/Group 1.jpg"
-// import group2 from "../assets/Gallery/Group 2.jpg"
-// import groupAnnual from "../assets/Gallery/Group Photo Annual Function.jpg"
-// import prizeDistribution from "../assets/Gallery/Prize Distribution.jpg"
-// import womenEmpowerment from "../assets/Gallery/Women Empowerment.jpg"
-// import z50_1962 from "../assets/Gallery/Z50_1962.jpg"
-// import z50_2116 from "../assets/Gallery/Z50_2116.jpg"
-
 export default function GalleryPage() {
 
 const photos = [
