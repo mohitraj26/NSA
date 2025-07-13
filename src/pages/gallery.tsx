@@ -31,7 +31,6 @@ import z50_1962 from "../assets/Gallery/Z50_1962.jpg"
 import z50_2116 from "../assets/Gallery/Z50_2116.jpg"
 
 export default function GalleryPage() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const photos = [
     {
