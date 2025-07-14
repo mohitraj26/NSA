@@ -9,22 +9,22 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
-import newspaper from "../assets/Photos/00112.jpg"
-import newsarticle from "../assets/Photos/001 Icard (1)_page-000312.jpg"
-import award from "../assets/Photos/001 Icard (1)_page-0011.jpg"
-import award2 from "../assets/Photos/001 Icard (1)_page-0010.jpg"
-import rajgir from "../assets/Photos/Rajgir Tour.jpg"
-import krishna from "../assets/Photos/Krishna Song.jpg"
-import sarswati from "../assets/Photos/Sarswati Vandana.jpg"
-import welcome from "../assets/Photos/Welcome Song.jpg"
-import chiefguest from "../assets/Photos/Chief Guest.jpg"
-import inaugration from "../assets/Photos/Inauguration.jpg"
-import rajkumar from "../assets/Photos/Raj Kumar Sir.jpg"
-import navdeep from "../assets/Photos/Navdeep Award.png"
-import ward from "../assets/Photos/Ward Councillor.jpg"
-import newsarticle2 from "../assets/Photos/001 Icard (1)_page-0003.jpg"
-import newsarticle3 from "../assets/Photos/001 Icard (1)_page-0004.jpg"
-import radhaSong from "../assets/Photos/001 Icard (1)_page-0007.jpg"
+// import newspaper from 
+// import newsarticle from 
+// import award from 
+// import award2 from 
+// import rajgir from 
+// import krishna from 
+// import sarswati from 
+// import welcome from 
+// import chiefguest from 
+// import inaugration from 
+// import rajkumar from 
+// import navdeep from 
+// import ward from 
+// import newsarticle2 from 
+// import newsarticle3 from 
+// import radhaSong from 
 
 export function HeroCarousel() {
   const [api, setApi] = useState<CarouselApi>()
@@ -41,96 +41,96 @@ export function HeroCarousel() {
       textColor: "text-blue-100",
     },
     {
-      image: newspaper,
+      image: "/Photos/00112.webp",
       buttonColor: "bg-white text-green-600 hover:bg-green-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-green-600",
     },
     {
-      image: newsarticle,
+      image: "/Photos/001 Icard (1)_page-000312.jpg",
       gradient: "from-purple-600 to-purple-800",
       buttonColor: "bg-white text-purple-600 hover:bg-purple-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-purple-600",
     },
     {
-      image: rajgir,
+      image: "/Photos/Rajgir Tour.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: krishna,
+      image: "/Photos/Krishna Song.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: sarswati,
+      image: "/Photos/Sarswati Vandana.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: radhaSong,
+      image: "/Photos/001 Icard (1)_page-0007.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: welcome,
+      image: "/Photos/Welcome Song.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: inaugration,
+      image: "/Photos/Inauguration.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: chiefguest,
+      image: "/Photos/Chief Guest.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: rajkumar,
+      image: "/Photos/Raj Kumar Sir.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: ward,
+      image: "/Photos/Ward Councillor.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: newsarticle2,
+      image: "/Photos/001 Icard (1)_page-0003.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: newsarticle3,
+      image: "/Photos/001 Icard (1)_page-0004.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: navdeep,
+      image: "/Photos/Navdeep Award.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: award,
+      image: "/Photos/001 Icard (1)_page-0011.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
     },
     {
-      image: award2,
+      image: "/Photos/001 Icard (1)_page-0010.webp",
       gradient: "from-orange-600 to-orange-800",
       buttonColor: "bg-white text-orange-600 hover:bg-orange-50",
       outlineColor: "border-white text-white hover:bg-white hover:text-orange-600",
