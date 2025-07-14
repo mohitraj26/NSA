@@ -9,23 +9,6 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
-// import newspaper from 
-// import newsarticle from 
-// import award from 
-// import award2 from 
-// import rajgir from 
-// import krishna from 
-// import sarswati from 
-// import welcome from 
-// import chiefguest from 
-// import inaugration from 
-// import rajkumar from 
-// import navdeep from 
-// import ward from 
-// import newsarticle2 from 
-// import newsarticle3 from 
-// import radhaSong from 
-
 export function HeroCarousel() {
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
