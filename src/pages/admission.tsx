@@ -14,7 +14,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle, Download, Calendar, FileText, Users } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function AdmissionsPage() {
   const applicationSteps = [
