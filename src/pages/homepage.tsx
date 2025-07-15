@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Users, BookOpen, Award, ArrowRight, Bell } from "lucide-react"
+import { Calendar, Users, BookOpen, Award, Bell } from "lucide-react"
 import { Link } from "react-router-dom"
 import { HeroCarousel } from "@/components/hero-carousel"
 
@@ -67,11 +67,6 @@ export default function HomePage() {
                 Stay updated with the latest happenings at our school
               </p>
             </div>
-            <Button variant="outline" asChild className="self-start sm:self-auto bg-transparent">
-              <Link to="/news">
-                View All <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

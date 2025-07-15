@@ -79,7 +79,13 @@ export default function AdmissionsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
-              <Link to="/apply">Start Application</Link>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc81Wl9VQSqtnDdSXOQL2wVgafvJWUzMvP2VTWEqJOyG5ueeg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start Application
+              </a>
             </Button>
           </div>
         </div>
