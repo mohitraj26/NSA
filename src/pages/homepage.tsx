@@ -10,26 +10,28 @@ export default function HomePage() {
   const newsItems = [
     {
       id: 1,
-      title: "Spring Enrollment Now Open",
-      date: "2024-01-15",
-      excerpt: "Applications are now being accepted for the Spring 2024 semester. Apply early to secure your spot.",
-      category: "Admissions",
+      title: "Admit Card Distribution for Upcoming Exams",
+      date: "2025-08-01",
+      excerpt: "Students are required to collect their admit cards from the school office before the examination dates. Please ensure you have your admit card to be eligible for entry.",
+      category: "Examination",
     },
-    {
-      id: 2,
-      title: "Science Fair Winners Announced",
-      date: "2024-01-12",
-      excerpt:
-        "Congratulations to our outstanding students who excelled in this year's annual science fair competition.",
-      category: "Academic",
-    },
-    {
-      id: 3,
-      title: "Parent-Teacher Conference Week",
-      date: "2024-01-10",
-      excerpt: "Schedule your conference appointments through the parent portal. Meetings available January 22-26.",
-      category: "Events",
-    },
+{
+  id: 2,
+  title: "Upcoming Speech Competition Announcement",
+  date: "2025-08-15",
+  excerpt:
+    "Students are invited to participate in the upcoming speech competition. Register your name at the office and prepare to showcase your speaking skills on stage.",
+  category: "Co-Curricular",
+},
+
+  {
+    id: 3,
+    title: "Parent-Teacher Conference",
+    date: "2025-09-05",
+    excerpt: "Parent-Teacher conferences will be held on September 5th. Parents are requested to attend and discuss their child's progress with the teachers.",
+    category: "Events",
+  }
+
   ]
 
   const programs = [

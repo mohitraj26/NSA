@@ -8,7 +8,7 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet"
-import { Menu, GraduationCap } from "lucide-react"
+import { Menu } from "lucide-react"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +29,8 @@ export function Header() {
         <div className="flex h-14 sm:h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <GraduationCap className="h-6 sm:h-8 w-6 sm:w-8 text-blue-600" />
+            {/* <GraduationCap className="h-6 sm:h-8 w-6 sm:w-8 text-blue-600" /> */}
+            <img src="/logo.png" alt="" className="h-14 sm:h-16"/>
             <span className="text-lg sm:text-xl font-bold text-gray-900 hidden sm:block">
               New Standard Academy
             </span>

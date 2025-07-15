@@ -153,7 +153,7 @@ export function HeroCarousel() {
             <CarouselItem key={index}>
               <div className={`relative h-[400px] sm:h-[500px] lg:h-[600px] bg-gradient-to-r ${slide.gradient}`}>
                 <div
-                  className="absolute inset-0 bg-center bg-contain bg-no-repeat bg-blue-700"
+                  className="absolute inset-0 bg-center bg-contain bg-no-repeat bg-blue-600"
                   style={{
                     backgroundImage: `url('${slide.image}')`,
                   }}
@@ -197,3 +197,7 @@ export function HeroCarousel() {
     </section>
   )
 }
+
+
+
+
