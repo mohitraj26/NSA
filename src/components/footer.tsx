@@ -74,22 +74,6 @@ export function Footer() {
                   Staff Portal
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/calendar"
-                  className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base"
-                >
-                  Academic Calendar
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/policies"
-                  className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base"
-                >
-                  Policies
-                </Link>
-              </li>
             </ul>
           </div>
 
